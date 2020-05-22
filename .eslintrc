@@ -1,0 +1,13 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "@typescript-eslint/no-unused-vars": 0,
+    "array-bracket-spacing": 0,
+    "@typescript-eslint/indent": 0,
+    "comma-dangle": 0,
+    "space-before-function-paren": 0,
+    "indent": 0,
+    "no-bitwise": 0,
+    "no-unused-vars": 0
+  }
+}
