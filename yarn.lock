@@ -4317,17 +4317,10 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-gn-egg-framework@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/gn-egg-framework/-/gn-egg-framework-1.0.0.tgz#cf528bc5360de7bdb1337f5a074d0ad4203c9f51"
-  integrity sha512-vxYqq6CtJIxAjOAN/e+lUcZIxsNHqNOb0IrSdVb6fnsDGC20r9FTEwToXw7qtVTm2o6XWw/R6YhnlhY7E9O40Q==
-  dependencies:
-    egg "^2.26.1"
-
-gn-egg-lib@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/gn-egg-lib/-/gn-egg-lib-1.0.0.tgz#cd1465b782ea80dbde7cd2058a10304b34c3cf44"
-  integrity sha512-cgrUluJ9UkE2fLS3KfG+lmin5z6Vq4vOmBvbzis6RfD9qGyR3aqrU/xMhdq8o12IFHddc/8Liuaq5cWPtD3cnQ==
+gn-egg-lib@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/gn-egg-lib/-/gn-egg-lib-1.0.3.tgz#7a22e2e553dd3d1893bf2d7b5104c03377d61c07"
+  integrity sha512-a6rAoR+EAbHIN2uGoN9BphIhxZsuzvIZ7W1ey04Kl/H9s2AUAdpJGv+YHH/XIEX2jCwvwGzmNkY/crs+9qf/iA==
 
 got@^9.6.0:
   version "9.6.0"

@@ -8,8 +8,7 @@
     "egg-redis": "^2.4.0",
     "egg-scripts": "^2.13.0",
     "egg-sequelize": "^5.2.1",
-    "gn-egg-framework": "^1.0.0",
-    "gn-egg-lib": "^1.0.0",
+    "gn-egg-lib": "^1.0.3",
     "lodash": "^4.17.15",
     "mysql2": "^2.1.0",
     "reflect-metadata": "^0.1.13",
@@ -46,6 +45,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gienah-studio/gn-egg-framework.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "keywords": [
     "egg",
