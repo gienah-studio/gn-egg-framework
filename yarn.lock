@@ -4394,10 +4394,10 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-gn-egg-lib@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/gn-egg-lib/-/gn-egg-lib-1.0.6.tgz#8289cc91a5177b9ea557ff2fc040c500d8d8d8a6"
-  integrity sha512-sl325hsqKTJjd5+jXfG2JMlj05NsiWVkKMueDFXFsz3atdebSzTaDhYb11NW4warTWc7/Vnky1VZiogBBosgng==
+gn-egg-lib@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/gn-egg-lib/download/gn-egg-lib-1.0.8.tgz?cache=0&sync_timestamp=1590228436914&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgn-egg-lib%2Fdownload%2Fgn-egg-lib-1.0.8.tgz#2b5036ebb4724d2364abe3ea725d2859982fc955"
+  integrity sha1-K1A267RyTSNkq+Pqcl0oWZgvyVU=
   dependencies:
     "@hapi/joi" "^17.1.1"
 

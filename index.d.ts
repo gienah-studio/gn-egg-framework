@@ -12,7 +12,7 @@ type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? R
 import ExportCoreCache from './app/service/core/cache';
 import ExportCoreHttp from './app/service/core/http';
 import ExportCoreShortId from './app/service/core/shortid';
-
+import ExportCoreAccount from './app/service/core/account';
 declare module 'egg' {
   interface Application {
     redis: Redis;
@@ -22,6 +22,7 @@ declare module 'egg' {
       cache: AutoInstanceType<typeof ExportCoreCache>;
       http: AutoInstanceType<typeof ExportCoreHttp>;
       shortid: AutoInstanceType<typeof ExportCoreShortId>;
+      account: AutoInstanceType<typeof ExportCoreAccount>;
     };
   }
 }
