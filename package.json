@@ -1,6 +1,6 @@
 {
   "name": "gn-egg-framework",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "egg framework for gienah-studio",
   "dependencies": {
     "dotenv": "^8.2.0",
