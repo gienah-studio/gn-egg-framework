@@ -1,3 +1,5 @@
+'use strict';
+
 const { GN_ERROR_CODE, default: GNError } = require('gn-egg-lib/gn-error');
 const _ = require('lodash');
 
@@ -31,26 +33,26 @@ function errorHandler() {
         }
         ctx.body = config.isProd
           ? {
-            code,
-          }
+              code,
+            }
           : {
-            code,
-            message: message || (data && data.e && data.e.message),
-            data,
-            stack,
-          };
+              code,
+              message: message || (data && data.e && data.e.message),
+              data,
+              stack,
+            };
       } else {
         logError(err, ctx);
         ctx.status = 500;
         ctx.body = { error: message };
         ctx.body = config.isProd
           ? {
-            error: message,
-          }
+              error: message,
+            }
           : {
-            message: message || (data && data.e && data.e.message),
-            err,
-          };
+              message: message || (data && data.e && data.e.message),
+              err,
+            };
       }
     }
   };

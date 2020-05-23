@@ -1,6 +1,7 @@
 'use strict';
 
 const mock = require('egg-mock');
+require('dotenv').config();
 
 describe('test/framework.test.js', () => {
   let app;
@@ -17,10 +18,6 @@ describe('test/framework.test.js', () => {
   afterEach(mock.restore);
 
   it('should GET /', () => {
-    return app.httpRequest()
-      .get('/')
-      .expect('framework-example_123456')
-      .expect(200);
+    return app.httpRequest().get('/').expect(200);
   });
 });
-

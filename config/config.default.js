@@ -3,9 +3,6 @@
 module.exports = appInfo => {
   const config = {};
 
-  // add your egg config in here
-  config.middleware = ['errorHandler'];
-
   config.cluster = {
     listen: {
       port: 7001,
@@ -14,10 +11,10 @@ module.exports = appInfo => {
   };
 
   config.sequelize = {
-    username: process.env.DB_USERNAME || '',
-    password: process.env.DB_PASSWORD || '',
-    database: process.env.ACCOUNT_SVC_DB || 'account',
-    host: process.env.DB_HOST || 'localhost',
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE,
+    host: process.env.DB_HOST,
     port: 3306,
     dialect: 'mysql',
     define: {
@@ -50,10 +47,10 @@ module.exports = appInfo => {
 
   config.redis = {
     client: {
-      host: process.env.CACHE_HOST || 'localhost',
-      port: parseInt(process.env.CACHE_PORT || '6379'),
-      password: process.env.CACHE_PASSWORD || '',
-      db: parseInt(process.env.CACHE_DB || '0'),
+      host: process.env.CACHE_HOST,
+      port: parseInt(process.env.CACHE_PORT),
+      password: process.env.CACHE_PASSWORD,
+      db: parseInt(process.env.CACHE_DB),
     },
     agent: true,
   };
@@ -62,12 +59,10 @@ module.exports = appInfo => {
     appid: process.env.ALINODE_APPID,
     secret: process.env.ALINODE_APP_SECRET,
   };
+
   config.httpclient = {
     enableDNSCache: true,
   };
-
-
-
 
   return config;
 };

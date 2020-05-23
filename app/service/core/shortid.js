@@ -4,7 +4,7 @@ const Service = require('egg').Service;
 const shortid = require('shortid');
 
 class ShortIdService extends Service {
-  getShortId({ count }) {
+  generate(count = 1) {
     const data = [];
     for (let i = 0; i < count; i++) {
       data.push(shortid.generate());
