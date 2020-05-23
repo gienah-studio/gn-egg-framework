@@ -1,8 +1,18 @@
 'use strict';
 
-// add you build-in plugin here, example:
-// exports.nunjucks = {
-//   enable: true,
-//   package: 'egg-view-nunjucks',
-// };
+const plugin = {
+    sequelize: {
+        enable: true,
+        package: 'egg-sequelize',
+    },
+    redis: {
+        enable: true,
+        package: 'egg-redis',
+    },
+    alinode: {
+        enable: process.env.NODE_ENV === 'production',
+        package: 'egg-alinode',
+    },
+};
 
+module.exports = exports = plugin;
