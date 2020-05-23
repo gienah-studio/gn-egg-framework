@@ -4394,10 +4394,10 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-gn-egg-lib@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/gn-egg-lib/-/gn-egg-lib-1.0.5.tgz#0445de5cda6676ecd405ee5ac0daa07f3401c291"
-  integrity sha512-X2RSSAF+C2dEAn+yvlWFpMBd6QVFkmm1FvHcGMDSvcsbIN8gC0kln11EYS1JUL7LyySm4PdFd4QROSLjdDWzEA==
+gn-egg-lib@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/gn-egg-lib/-/gn-egg-lib-1.0.6.tgz#8289cc91a5177b9ea557ff2fc040c500d8d8d8a6"
+  integrity sha512-sl325hsqKTJjd5+jXfG2JMlj05NsiWVkKMueDFXFsz3atdebSzTaDhYb11NW4warTWc7/Vnky1VZiogBBosgng==
   dependencies:
     "@hapi/joi" "^17.1.1"
 
