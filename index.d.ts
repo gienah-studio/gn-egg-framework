@@ -1,5 +1,4 @@
 import * as Egg from 'egg';
-import { Application } from 'egg';
 import { Redis } from 'ioredis';
 
 type AnyClass = new (...args: any[]) => any;
@@ -13,6 +12,7 @@ import ExportCoreCache = require('./app/service/core/cache');
 import ExportCoreHttp = require('./app/service/core/http');
 import ExportCoreShortId = require('./app/service/core/shortid');
 import ExportCoreAccount = require('./app/service/core/account');
+import ExportCoreMobile = require('./app/service/core/mobile');
 declare module 'egg' {
   interface Application {
     redis: Redis;
@@ -23,6 +23,7 @@ declare module 'egg' {
       http: AutoInstanceType<typeof ExportCoreHttp>;
       shortid: AutoInstanceType<typeof ExportCoreShortId>;
       account: AutoInstanceType<typeof ExportCoreAccount>;
+      mobile: AutoInstanceType<typeof ExportCoreMobile>;
     };
   }
 }
