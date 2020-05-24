@@ -5,6 +5,11 @@ const { GN_ERROR_CODE, default: GNError } = require('gn-egg-lib/gn-error');
 const _ = require('lodash');
 
 class MobileService extends Service {
+  /**
+   * Send random captcha to mobile
+   * @param {string} mobile mobile number
+   * @param {string} sceneCode mobile scene code
+   */
   async sendCaptcha(mobile, sceneCode) {
     const { service } = this;
 

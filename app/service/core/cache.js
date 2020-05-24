@@ -5,6 +5,12 @@ const { GN_ERROR_CODE, default: GNError } = require('gn-egg-lib/gn-error');
 const _ = require('lodash');
 
 class CacheService extends Service {
+  /**
+   * Set cache item
+   * @param {string} key cache key
+   * @param {any} value cache value, prefer object
+   * @param {number | undefined} milliseconds time expire in milliseconds
+   */
   async set(key, value, milliseconds) {
     const { app, logger } = this;
     const { redis } = app;
@@ -28,6 +34,10 @@ class CacheService extends Service {
     }
   }
 
+  /**
+   * Get cache item
+   * @param {string} key cache key
+   */
   async get(key) {
     const { app, logger } = this;
     const { redis } = app;
@@ -48,6 +58,10 @@ class CacheService extends Service {
     }
   }
 
+  /**
+   * Delete cache item
+   * @param {string} key cache key
+   */
   async del(key) {
     const { app, logger } = this;
     const { redis } = app;

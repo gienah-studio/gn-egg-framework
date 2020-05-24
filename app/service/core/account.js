@@ -5,6 +5,10 @@ const { GN_ERROR_CODE, default: GNError } = require('gn-egg-lib/gn-error');
 const _ = require('lodash');
 
 class AccountService extends Service {
+  /**
+   * Get user role
+   * @param {string} userId the id of the user
+   */
   async getRole(userId) {
     const { service } = this;
 
