@@ -10,7 +10,7 @@
     "egg-redis": "^2.4.0",
     "egg-scripts": "^2.13.0",
     "egg-sequelize": "^5.2.1",
-    "gn-egg-lib": "^1.0.8",
+    "gn-egg-lib": "^1.0.10",
     "lodash": "^4.17.15",
     "mysql2": "^2.1.0",
     "reflect-metadata": "^0.1.13",
@@ -22,9 +22,9 @@
     "egg-bin": "^4.14.1",
     "egg-ci": "^1.15.0",
     "egg-mock": "^4.0.0",
-    "eslint": "^7.1.0",
+    "eslint": "^7.3.1",
     "eslint-config-egg": "^8.0.1",
-    "np": "^6.2.3",
+    "np": "^6.2.5",
     "prettier": "^2.0.5",
     "webstorm-disable-index": "^1.2.0"
   },
@@ -39,7 +39,7 @@
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
     "autod": "autod",
     "pkgfiles": "egg-bin pkgfiles",
-    "pub": "np"
+    "release": "np"
   },
   "ci": {
     "version": "8, 9"
