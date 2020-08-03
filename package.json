@@ -13,6 +13,8 @@
     "gn-egg-lib": "^1.0.10",
     "lodash": "^4.17.19",
     "mysql2": "^2.1.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "shortid": "^2.2.15"
   },
@@ -25,8 +27,10 @@
     "eslint": "^7.6.0",
     "eslint-config-egg": "^8.0.1",
     "np": "^6.3.2",
+    "osx-release": "^2.0.0",
     "prettier": "^2.0.5",
-    "webstorm-disable-index": "^1.2.0"
+    "webstorm-disable-index": "^1.2.0",
+    "win-release": "^3.0.0"
   },
   "engines": {
     "node": ">=8.0.0"

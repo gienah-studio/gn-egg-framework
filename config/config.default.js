@@ -15,8 +15,8 @@ module.exports = appInfo => {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
-    port: 3306,
-    dialect: 'mysql',
+    port: parseInt(process.env.DB_PORT, 10) || 3306,
+    dialect: process.env.DB_DIALECT || 'mysql',
     define: {
       freezeTableName: true,
       underscored: false,
@@ -48,9 +48,9 @@ module.exports = appInfo => {
   config.redis = {
     client: {
       host: process.env.CACHE_HOST,
-      port: parseInt(process.env.CACHE_PORT),
+      port: parseInt(process.env.CACHE_PORT) || 6379,
       password: process.env.CACHE_PASSWORD,
-      db: parseInt(process.env.CACHE_DB),
+      db: parseInt(process.env.CACHE_DB) || 0,
     },
     agent: true,
   };
