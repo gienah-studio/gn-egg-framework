@@ -3,8 +3,6 @@
 const { GN_ERROR_CODE, default: GNError } = require('gn-egg-lib/gn-error');
 const _ = require('lodash');
 
-const logError = (err, ctx) => {};
-
 function errorHandler() {
   return async function errorHandler(ctx, next) {
     try {

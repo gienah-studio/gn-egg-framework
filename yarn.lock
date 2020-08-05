@@ -4540,10 +4540,10 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-gn-egg-lib@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npm.taobao.org/gn-egg-lib/download/gn-egg-lib-1.0.12.tgz#87ac05eec09686718c27d15c80cbf1486df9d881"
-  integrity sha1-h6wF7sCWhnGMJ9FcgMvxSG352IE=
+gn-egg-lib@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.npm.taobao.org/gn-egg-lib/download/gn-egg-lib-1.0.14.tgz#945d4728e884de2e28ec71323870fb7fcdb99688"
+  integrity sha1-lF1HKOiE3i4o7HEyOHD7f825log=
   dependencies:
     "@hapi/joi" "^17.1.1"
 
