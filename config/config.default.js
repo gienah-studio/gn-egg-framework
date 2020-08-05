@@ -10,6 +10,11 @@ module.exports = appInfo => {
     },
   };
 
+  config.endpoint = {
+    accountService: process.env.ACCOUNT_SVC_HOST,
+    logService: process.env.LOG_SVC_HOST,
+  };
+
   config.sequelize = {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,

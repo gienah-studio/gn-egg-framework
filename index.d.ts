@@ -1,5 +1,6 @@
 import * as Egg from 'egg';
 import { Redis } from 'ioredis';
+import 'egg-sequelize';
 
 type AnyClass = new (...args: any[]) => any;
 type AnyFunc<T = any> = (...args: any[]) => T;
@@ -13,6 +14,7 @@ import ExportCoreHttp = require('./app/service/core/http');
 import ExportCoreShortId = require('./app/service/core/shortid');
 import ExportCoreAccount = require('./app/service/core/account');
 import ExportCoreMobile = require('./app/service/core/mobile');
+import ExportCoreLog = require('./app/service/core/log');
 declare module 'egg' {
   interface Application {
     redis: Redis;
@@ -24,6 +26,7 @@ declare module 'egg' {
       shortid: AutoInstanceType<typeof ExportCoreShortId>;
       account: AutoInstanceType<typeof ExportCoreAccount>;
       mobile: AutoInstanceType<typeof ExportCoreMobile>;
+      log: AutoInstanceType<typeof ExportCoreLog>;
     };
   }
 }
