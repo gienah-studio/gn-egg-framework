@@ -11,10 +11,19 @@ class MobileService extends Service {
    * @param {string} sceneCode mobile scene code
    */
   async sendCaptcha(mobile, sceneCode) {
-    const { service } = this;
+    const { app, service } = this;
+
+    const serviceHost = _.get(app, 'config.endpoint.mobileService');
+    if (!serviceHost) {
+      console.warn('MOBILE_SVC_HOST not provided, skip send captcha');
+      return;
+    }
 
     try {
-      const res = await service.core.http.post(`http://${process.env.MOBILE_SVC_HOST}/captcha/send`, { mobile, sceneCode });
+      const res = await service.core.http.post(`http://${serviceHost}/captcha/send`, {
+        mobile,
+        sceneCode,
+      });
       return res;
     } catch (e) {
       throw new GNError(GN_ERROR_CODE.MOBILE_CAPTCHA_SENT_ERROR, e);

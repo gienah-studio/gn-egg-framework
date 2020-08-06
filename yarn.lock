@@ -3353,6 +3353,11 @@ egg-sequelize@^5.2.2:
     mz-modules "^2.1.0"
     sequelize "^5.0.0"
 
+egg-session-redis@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/egg-session-redis/download/egg-session-redis-2.1.0.tgz#b58aca762961a9c86ee7b76ebbb4b6749927cdfe"
+  integrity sha1-tYrKdilhqchu57duu7S2dJknzf4=
+
 egg-session@^3.1.0:
   version "3.2.0"
   resolved "https://registry.npm.taobao.org/egg-session/download/egg-session-3.2.0.tgz#f02323516ba63c72a5d79dcbaa13df274ec3f9cd"
@@ -4540,12 +4545,18 @@ globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-gn-egg-lib@^1.0.15:
-  version "1.0.15"
-  resolved "https://registry.npm.taobao.org/gn-egg-lib/download/gn-egg-lib-1.0.15.tgz?cache=0&sync_timestamp=1596678027999&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgn-egg-lib%2Fdownload%2Fgn-egg-lib-1.0.15.tgz#d37814eac398eec5ea37c63f673b852942ec4484"
-  integrity sha1-03gU6sOY7sXqN8Y/ZzuFKULsRIQ=
+gn-egg-lib@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.npm.taobao.org/gn-egg-lib/download/gn-egg-lib-1.0.17.tgz#63334ceb98543da03f6dff00703571adaabca83e"
+  integrity sha1-YzNM65hUPaA/bf8AcDVxraq8qD4=
   dependencies:
     "@hapi/joi" "^17.1.1"
+    egg "^2.27.0"
+    egg-errors "^2.1.1"
+    lodash "^4.17.19"
+    reflect-metadata "^0.1.13"
+    tslib "^2.0.0"
+    typescript "^3.9.7"
 
 got@^10.6.0:
   version "10.7.0"
@@ -8797,6 +8808,11 @@ tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha1-yIHhPMcBWJTtkUhi0nZDb6mkcEM=
 
+tslib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha1-GNE/wtzgQFHiDwdMyDh/2Aic5PM=
+
 tsscmp@1.0.6:
   version "1.0.6"
   resolved "https://registry.npm.taobao.org/tsscmp/download/tsscmp-1.0.6.tgz#85b99583ac3589ec4bfef825b5000aa911d605eb"
@@ -8894,6 +8910,11 @@ typescript@^3.0.0:
   version "3.9.3"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.3.tgz?cache=0&sync_timestamp=1590045222144&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
   integrity sha1-06yIg6l8JhOeQt9ek+7s4z1hC4o=
+
+typescript@^3.9.7:
+  version "3.9.7"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.7.tgz?cache=0&sync_timestamp=1596698224454&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
+  integrity sha1-mNYApevcOPQMsndSLxLcgA6eJfo=
 
 uid-safe@2.1.5:
   version "2.1.5"

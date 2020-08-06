@@ -15,12 +15,15 @@ class HttpService extends Service {
     try {
       return await ctx.curl(url, {
         data: params,
+        method: 'GET',
+        contentType: 'json',
         dataType: 'json',
         ...options,
       });
     } catch (e) {
-      throw new GNError(GN_ERROR_CODE.HTTP_GET_ERROR, {
+      throw new GNError(GN_ERROR_CODE.HTTP_REQUEST_ERROR, {
         e,
+        method: 'GET',
         url,
         params,
       });
@@ -44,9 +47,10 @@ class HttpService extends Service {
         ...options,
       });
     } catch (e) {
-      throw new GNError(GN_ERROR_CODE.HTTP_POST_ERROR, {
+      throw new GNError(GN_ERROR_CODE.HTTP_REQUEST_ERROR, {
         e,
         url,
+        method: 'POST',
         params,
       });
     }

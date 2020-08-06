@@ -47,7 +47,7 @@ module.exports = appInfo => {
   };
 
   config.logger = {
-    outputJSON: false,
+    outputJSON: process.env.NODE_ENV === 'production',
   };
 
   config.redis = {
@@ -67,6 +67,14 @@ module.exports = appInfo => {
 
   config.httpclient = {
     enableDNSCache: true,
+  };
+
+  config.session = {
+    key: process.env.SESSION_KEY || 'GN_SESS',
+    renew: true,
+    maxAge: parseInt(process.env.SESSION_MAX_AGE) || 3600000,
+    httpOnly: true,
+    encrypt: true,
   };
 
   return config;

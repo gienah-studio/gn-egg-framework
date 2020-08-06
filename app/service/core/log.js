@@ -6,8 +6,8 @@ const _ = require('lodash');
 class LogService extends Service {
   async record(eventName, eventData) {
     const { app, service, ctx } = this;
-    const logServiceHost = app.config.endpoint.logService;
-    if (!logServiceHost) {
+    const serviceHost = _.get(app, 'config.endpoint.logService');
+    if (!serviceHost) {
       console.warn('LOG_SVC_HOST not provided, skip logging');
       return;
     }
@@ -15,12 +15,12 @@ class LogService extends Service {
     const operatorId = _.get(ctx, 'session.user.userId');
     const operatorName = _.get(ctx, 'session.user.realName');
     if (!operatorId || !operatorName) {
-      console.warn('operator not valid, skip: ', 'operatorId:', operatorId, 'operatorName: ', operatorName);
+      console.log('operator not valid, skip: ', 'operatorId:', operatorId, 'operatorName: ', operatorName);
       return;
     }
 
     try {
-      return await service.core.http.post(`http://${logServiceHost}/record`, {
+      return await service.core.http.post(`http://${serviceHost}/record`, {
         eventName,
         eventData,
         operatorId,
